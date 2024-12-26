@@ -1,0 +1,55 @@
+*{
+    font-family: sans-serif;
+}
+.container {
+    position: relative;
+    width: 450px;
+    overflow: hidden;
+    height: 350px;
+}
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.text{
+    position: absolute;
+    font-size: 15px;
+    color:rgb(90, 90, 90);
+    text-align: center;
+    left:  15%;
+    top: 40%;
+    transition: transform 0.2s linear, color 0s linear;
+}
+.text h1{
+    font-weight: 400 ;
+}
+.text h1 span{
+    font-weight: 700;
+}
+.text p{
+    margin-top: 150px; 
+    opacity: 0;
+    text-align: center;
+}
+.container:hover .text p{
+    opacity:1;
+}
+.container:hover .text{
+    color: white;
+    transform: translateY(-20%);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 0.5s ease;
+}
+.container:hover .overlay{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(39, 41, 70, 0.4))
+}
